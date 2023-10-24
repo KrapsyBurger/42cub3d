@@ -6,7 +6,7 @@
 /*   By: nfascia <nathanfascia@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 11:17:31 by ychibani          #+#    #+#             */
-/*   Updated: 2022/11/21 18:14:35 by nfascia          ###   ########.fr       */
+/*   Updated: 2023/10/24 16:42:09 by nfascia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,9 @@ int	__mlx_init(t_cub *cub)
 	__memset(cub, 0, sizeof(cub));
 	cub->mlx = mlx_init();
 	if (!cub->mlx)
-		return (__FAILURE);
-	cub->win = mlx_new_window(cub->mlx, 1920, 1080, "cub");
+	 	return (__FAILURE);
+	// printf("COUCOU");
+	cub->win = mlx_new_window(cub->mlx, 1900, 1080, "cub");
 	if (!cub->win)
 		return (__mlx_destroy_win(cub), __FAILURE);
 	cub->img.new_img = mlx_new_image(cub->mlx, SCREEN_WIDTH, SCREEN_HEIGHT);

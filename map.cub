@@ -1,9 +1,9 @@
-NO ./texture/no.xpm   
-SO ./texture/so.xpm
-WE ./texture/we.xpm
-EA ./texture/ea.xpm
-F 0,125,12
-C 0,167,2
+NO ./texture/bluestone.xpm   
+SO ./texture/greystone.xpm
+WE ./texture/mossy.xpm
+EA ./texture/redbrick.xpm
+F 128,11,11
+C 166,222,203
 
 111111
 1111111111
